@@ -6,7 +6,7 @@ services:
     build:
       context: ./${PROJECT_NAME}
     volumes:
-      - ./:/usr/src/${PROJECT_NAME}:rw,cached
+      - ./${PROJECT_NAME}:/usr/src/${PROJECT_NAME}:rw,cached
       - /usr/src/${PROJECT_NAME}/node_modules
     ports:
       - '85:3000'
