@@ -1,0 +1,9 @@
+**/.DS_Store
+**/.git/
+**/.gitattributes
+**/.gitignore
+**/.gitmodules
+**/Thumbs.db
+.env*
+build/
+node_modules/
