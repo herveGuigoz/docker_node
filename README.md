@@ -1,18 +1,20 @@
-# 4padel
+## Install
 
-> Feuille de match 4Padel
+### Create Nuxt app
 
-## Build Setup
+- run `yarn create nuxt-app <nom-de-mon-app>`
 
-### Create nuxt app
+### Install app on docker
 
-- run `yarn create nuxt-app <app-name>` or `npx create-nuxt-app <app-name>` in local
-- edit `.env` && `docker-compose` PROJECT_NAME variables with the given ap name.
-- run : 
+- Edit `.env` & `Makefile` `PROJECT_NAME` variables.
+- run :
+
 ``` bash
-$ yarn install
+$ make install
 ```
 
-### visit [your app](http://localhost:85/)
+- visit `http://localhost:85/`
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+### edit port:
+
+-> docker-compose under `PORT`
