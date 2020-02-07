@@ -2,11 +2,11 @@ version: '3.5'
 
 services:
   nuxt:
-    container_name: nuxt
+    container_name: nuxt_${PROJECT_NAME}
     build:
-      context: ./
+      context: ./${PROJECT_NAME}
     volumes:
-      - ./:/usr/src/nuxt:rw,cached
-      - /usr/src/nuxt/node_modules
+      - ./:/usr/src/${PROJECT_NAME}:rw,cached
+      - /usr/src/${PROJECT_NAME}/node_modules
     ports:
       - '85:3000'

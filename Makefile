@@ -24,10 +24,10 @@ logs: ## Show logs
 	docker-compose logs -f
 
 ssh: ## Connect to the container in ssh
-	docker exec -it 4padel sh
+	docker exec -it td sh
 
 lint: ## Run lint
-	docker-compose exec 4padel yarn lint --fix
+	docker-compose exec td yarn lint --fix
 
 .DEFAULT_GOAL := help
 help:
